@@ -172,3 +172,34 @@ footer {
   height: 100%;
   border: 0;
 }
+
+.seccion-doble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.seccion-doble img {
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.texto-derecha {
+  max-width: 600px;
+  text-align: left;
+}
+
+.seccion-doble.invertir {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  .seccion-doble,
+  .seccion-doble.invertir {
+    flex-direction: column;
+    text-align: center;
+  }
+}
